@@ -1,13 +1,22 @@
 body {
-    background-image: url(../images/pink-marble.jpeg);
     background-color: rgb(255, 226, 231);
     margin: 5px;
     font-family: Helvetica, Verdana, Arial;
     text-align: center;
 }
 
-.skip, .home-quick ul {
+.home-quick ul {
     text-align: left;
+}
+
+.skip {
+    position: absolute;
+    left: 0px;
+    transform: translateY(-250%);
+}
+
+.skip:focus {
+    transform: translateY(0%);
 }
 
 header {
@@ -57,7 +66,7 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover, a:focus, .skip:focus {
     color: rgb(211, 129, 255);
     text-decoration: underline;
     font-style: italic;
@@ -194,6 +203,7 @@ p {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+   
 }
 
 @media screen and (min-width: 1200px) {
