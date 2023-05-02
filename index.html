@@ -37,6 +37,11 @@
             <p>This is a simple webpage I built to demonstrate some of my web development skills and elaborate on my professional work.</p>
             <p>If you like this website, let me know! If you have concerns or suggestions for this website (ie. content, accessibility, screen optimization), please voice them so that I can build this website better.</p>
             <p>Thanks for visiting!</p>
+            <div class="home-contact">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:aayana@umich.edu">aayana@umich.edu</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/aayana-anand-2724791a3/" target="_blank">Aayana Anand</a></p>
+            </div>
             <hr>
             <div class="aboutme-flex">
                 <div class="aboutme-text">
@@ -55,28 +60,51 @@
                     <img src="images/IMG_0174.jpeg" alt="A picture of me by the UMMA"/>
                 </div>
             </div>
-            <div class="home-contact">
-                <h2>Contact Information</h2>
-                <p>Email: <a href="mailto:aayana@umich.edu">aayana@umich.edu</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/aayana-anand-2724791a3/" target="_blank">Aayana Anand</a></p>
-            </div>
         </div>
-
+        <hr>
+        <h2>Image Gallery</h2>
         <div class="home-imgs">
-            <img src="images/IMG_0043.jpeg" alt="Me in a Yellow Dress in the Law Quad"/>
-            <img src="images/IMG_0148.jpeg" alt="My friend and I at Pinball Pete's"/>
-            <img src="images/IMG_0689.jpeg" alt="My friends and I at Nichol's Arcade"/>
-            <img src="images/IMG_3561.jpeg" alt="My dog, Biscuit"/>
-            <img src="images/IMG_6432.jpeg" alt="Me holding my latte at Vertex Coffee"/>
-            <img src="images/IMG_6822.jpeg" alt="Me with my coffee at Sweetwaters in Kerrytown"/>
-            <img src="images/IMG_8159.jpeg" alt="My family and I at a restaurant in Little Havana"/>
-            <img src="images/IMG_2528.jpeg" alt="My friend and I at Lake Michigan"/>
-            <img src="images/IMG_0625.jpeg" alt="My friend and I at a Valentines Day Party"/>
-            <img src="images/IMG_3969.jpeg" alt="My cousin and I at an Indian Wedding"/>
-            <img src="images/IMG_7197.jpeg" alt="My friends and I at the Kerrytown Farmers Market"/>
-            <img src="images/Untitled.jpg" alt="My friends and I at the Great Estate in Rochester Hills"/>
+            <img src="images/IMG_0043.jpeg" alt="Me in a Yellow Dress in the Law Quad" tabindex="0"/>
+            <img src="images/IMG_0148.jpeg" alt="My friend and I at Pinball Pete's" tabindex="0"/>
+            <img src="images/IMG_0689.jpeg" alt="My friends and I at Nichol's Arcade" tabindex="0"/>
+            <img src="images/IMG_3561.jpeg" alt="My dog, Biscuit" tabindex="0"/>
+            <img src="images/IMG_6432.jpeg" alt="Me holding my latte at Vertex Coffee" tabindex="0"/>
+            <img src="images/IMG_6822.jpeg" alt="Me with my coffee at Sweetwaters in Kerrytown" tabindex="0"/>
+            <img src="images/IMG_8159.jpeg" alt="My family and I at a restaurant in Little Havana" tabindex="0"/>
+            <img src="images/IMG_2528.jpeg" alt="My friend and I at Lake Michigan" tabindex="0"/>
+            <img src="images/IMG_0625.jpeg" alt="My friend and I at a Valentines Day Party" tabindex="0"/>
+            <img src="images/IMG_3969.jpeg" alt="My cousin and I at an Indian Wedding" tabindex="0"/>
+            <img src="images/IMG_7197.jpeg" alt="My friends and I at the Kerrytown Farmers Market" tabindex="0"/>
+            <img src="images/Untitled.jpg" alt="My friends and I at the Great Estate in Rochester Hills" tabindex="0"/>
         </div>
+        <p id="captionbox">Navigate to an Image!</p>
+        <script>
+            let imgs = document.querySelectorAll("img");
+            let captionbox = document.getElementById("captionbox");
+            for (let i = 1; i < 13; i++) {
+                imgs[i].addEventListener("mouseover", function() {
+                    imgs[i].style.borderWidth = "6px";
+                    imgs[i].style.borderColor = "rgba(43, 0, 255, 0.539)"
+                    captionbox.innerHTML = imgs[i].alt;
+                })
+                imgs[i].addEventListener("mouseout", function() {
+                    imgs[i].style.borderWidth = "2px";
+                    imgs[i].style.borderColor = "rgb(244, 203, 255)"
+                    captionbox.innerHTML = "Navigate to an Image!";
+                })
+                imgs[i].addEventListener("focus", function() {
+                    imgs[i].style.borderWidth = "6px";
+                    imgs[i].style.borderColor = "rgba(43, 0, 255, 0.539)"
+                    captionbox.innerHTML = imgs[i].alt;
+                })
+                imgs[i].addEventListener("blur", function() {
+                    imgs[i].style.borderWidth = "2px";
+                    imgs[i].style.borderColor = "rgb(244, 203, 255)"
+                    captionbox.innerHTML = "Navigate to an Image!";
+                })
+            }
+        </script>
     </main>
 </body>
-<footer>This website was made by Aayana Anand using solely HTML and CSS. Last updated 5.1.2023</footer>
+<footer>This website was made by Aayana Anand using solely HTML and CSS. All code for this website is available on <a href="https://github.com/aayanaanand" target="_blank">my GitHub</a>. Last updated 5.2.2023</footer>
 </html>

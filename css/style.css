@@ -81,7 +81,7 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus, .skip:focus {
+a:hover, a:focus, .skip:focus, footer a:focus {
     color: rgb(211, 129, 255);
     text-decoration: underline;
     font-style: italic;
@@ -139,6 +139,14 @@ p {
 .work-gwc a, .work-lifeline a, .work-kpmg a, .whatthef a, .diiVe a, .funrun a, .spotify a, .patent a, .medium a{
     display: block;
     margin: 0px auto;
+}
+
+#captionbox{
+    margin: 0px auto;
+    border: 2px solid rgb(244, 203, 255);
+    border-radius: 10px;
+    width: 25%;
+    padding: 5px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -229,7 +237,6 @@ p {
     .home-contact {
         width: 25%;
         border: 2px solid rgb(244, 203, 255);
-        margin: 0px auto;
     }
 
     .aboutme-flex {
