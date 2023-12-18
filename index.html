@@ -29,84 +29,33 @@
                 <li><a href="awards.html">Awards and Certifications</a></li>
             </ul>
         </nav>
+        <h1 id="oneliner">Student and Analyst for Social Good</h1>
         <h1 id="h1animation">Aayana Anand</h1>
     </header>
     <main id="main">
         <div class="home-overview">
-            <h2>Welcome!</h2>
-            <p>This is a simple webpage I built to demonstrate some of my web development skills and elaborate on my professional work.</p>
-            <p>If you like this website, let me know! If you have concerns or suggestions for this website (ie. content, accessibility, screen optimization), please voice them so that I can build this website better.</p>
-            <p>Thanks for visiting!</p>
-            <div class="home-contact">
-                <h2>Contact Information</h2>
-                <p>Email: <a href="mailto:aayana@umich.edu">aayana@umich.edu</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/aayana-anand-2724791a3/" target="_blank">Aayana Anand</a></p>
-            </div>
-            <hr>
             <div class="aboutme-flex">
+                <div class="aboutme-img">
+                    <img id="h1animation"src="images/UMSI_AayanaAnand_112023_07.JPG" alt="A picture of me by the UMMA"/>
+                </div>
                 <div class="aboutme-text">
                     <h2>About Me</h2>
-                    <p>I'm Aayana (she/her), and I'm a junior at the University of Michigan School of Information. I'm majoring in Information/Data Analysis. This past summer, I worked as a Data Analytics Intern at Stryker in the Customer Solutions Division at the Kalamazoo world headquarters. I also have experience from the summer prior in Consulting via a global internship program called diiVe. I'm open to any sector/function and always excited to learn new things.</p>
-                    <p>I was born in Canada, but I've spent most of my life in Michigan. I’m a first generation American and daughter of South Asian immigrants, and my culture/life experiences have always shaped my work. It’s because of my identity and upbringing that I place an especially high value on diversity, equity, and inclusion in social spaces and workplaces.
+                    <p>My name is Aayana Anand (she/her), and I'm a junior at the University of Michigan, obtaining my Bachelors of Science in Information from the School of Information (UMSI). I'm majoring in Information/Data Analysis and obtaining a certificate of Leadership. This past summer, I worked as a Data Analytics Intern at Stryker in the Customer Solutions Division at the Kalamazoo world headquarters, and <b>I'm excited to announce that I will be returning to Customer Solutions as a Market Analytics Intern in Summer 2024.</b></p>
+                    <p>In addition to my experience at Stryker, I have completed previous internship programs at diiVe (Market Consulting) and KPMG Australia (Data Analytics). I'm also heavily involved on campus. I work as an Instructional Aide for an introductory Python class (SI 106) within UMSI. I am co-director of the Podcast and Blog team for What the F, an intersectional feminist organization. I'm an Applied Leadership Fellow and Grants Specialist for the UM Barger Leadership Institute.</p>
+                    <p>I was born in Canada, but I've spent most of my life in Michigan. I’m a first generation American and daughter of South Asian immigrants, so my culture/life experiences have always shaped my work. It’s because of my identity and upbringing that I place an especially high value on diversity, equity, and inclusion in social spaces and workplaces.
                     </p>
-                    <p>My passion is leveraging data/technology/information for social good – using technical skills to gain insights about the world and subsequently use those insights to find solutions to problems. In the process, I aim to approach my work collaboratively, ethically, and with an agile mindset.
+                    <p><b>My passion is leveraging data/technology/information for social good – using technical skills to gain insights about the world and subsequently use those insights to find solutions to problems. In the process, I aim to approach my work collaboratively, ethically, and with an agile mindset.</b>
                     </p>
-                    <p>Currently, I work as an Instructional Aide for an introductory Python class in my university program. I am co-director of the Podcast and Blog team for What the F, an intersectional feminist organization on campus. Finally, I'm an Applied Leadership Fellow for the UM Barger Leadership Institute in the Grants and Funding team.
+                    <p>Outside of my work, I am a HUGE Swiftie. I love trying out coffee/boba shops, watching rom-coms, and hanging out with my friends! 
                     </p>
-                    <p>In my free time, I like writing, doing puzzles, trying out coffee/boba shops, watching movies/TV, and hanging out with friends!
-                    </p>
-                    <p>If you have any requests or inquiries, please don't hesitate to contact me.
-                    </p>
-                </div>
-                <div class="aboutme-img">
-                    <img src="images/IMG_0174.jpeg" alt="A picture of me by the UMMA"/>
                 </div>
             </div>
         </div>
-        <hr>
-        <h2>Image Gallery</h2>
-        <div class="home-imgs">
-            <img src="images/IMG_0043.jpeg" alt="Me in a Yellow Dress in the Law Quad" tabindex="0"/>
-            <img src="images/IMG_0148.jpeg" alt="My friend and I at Pinball Pete's" tabindex="0"/>
-            <img src="images/IMG_0689.jpeg" alt="My friends and I at Nichol's Arcade" tabindex="0"/>
-            <img src="images/IMG_3561.jpeg" alt="My dog, Biscuit" tabindex="0"/>
-            <img src="images/IMG_6432.jpeg" alt="Me holding my latte at Vertex Coffee" tabindex="0"/>
-            <img src="images/IMG_6822.jpeg" alt="Me with my coffee at Sweetwaters in Kerrytown" tabindex="0"/>
-            <img src="images/IMG_8159.jpeg" alt="My family and I at a restaurant in Little Havana" tabindex="0"/>
-            <img src="images/IMG_2528.jpeg" alt="My friend and I at Lake Michigan" tabindex="0"/>
-            <img src="images/IMG_0625.jpeg" alt="My friend and I at a Valentines Day Party" tabindex="0"/>
-            <img src="images/IMG_3969.jpeg" alt="My cousin and I at an Indian Wedding" tabindex="0"/>
-            <img src="images/IMG_7197.jpeg" alt="My friends and I at the Kerrytown Farmers Market" tabindex="0"/>
-            <img src="images/Untitled.jpg" alt="My friends and I in Rochester Hills" tabindex="0"/>
-        </div>
-        <p id="captionbox">Navigate to an Image!</p>
-        <script>
-            let imgs = document.querySelectorAll("img");
-            let captionbox = document.getElementById("captionbox");
-            for (let i = 1; i < 13; i++) {
-                imgs[i].addEventListener("mouseover", function() {
-                    imgs[i].style.borderWidth = "6px";
-                    imgs[i].style.borderColor = "rgba(43, 0, 255, 0.539)"
-                    captionbox.innerHTML = imgs[i].alt;
-                })
-                imgs[i].addEventListener("mouseout", function() {
-                    imgs[i].style.borderWidth = "2px";
-                    imgs[i].style.borderColor = "rgb(244, 203, 255)"
-                    captionbox.innerHTML = "Navigate to an Image!";
-                })
-                imgs[i].addEventListener("focus", function() {
-                    imgs[i].style.borderWidth = "6px";
-                    imgs[i].style.borderColor = "rgba(43, 0, 255, 0.539)"
-                    captionbox.innerHTML = imgs[i].alt;
-                })
-                imgs[i].addEventListener("blur", function() {
-                    imgs[i].style.borderWidth = "2px";
-                    imgs[i].style.borderColor = "rgb(244, 203, 255)"
-                    captionbox.innerHTML = "Navigate to an Image!";
-                })
-            }
-        </script>
     </main>
 </body>
-<footer>This website was made by Aayana Anand using solely HTML, CSS, and JavaScript. All code for this website is available on <a href="https://github.com/aayanaanand" target="_blank">my GitHub</a>. Last updated 9.27.2023</footer>
+<footer>This website was made by Aayana Anand using solely HTML, CSS, and JavaScript. All code for this website is available on <a href="https://github.com/aayanaanand" target="_blank">my GitHub</a>. Last updated 12.17.2023.
+<br>
+<br>
+<b>Email (<a href="mailto:aayana@umich.edu">aayana@umich.edu</a>) | LinkedIn (<a href="https://www.linkedin.com/in/aayana-anand-2724791a3/" target="_blank">Aayana Anand</a>)</b>
+</footer>
 </html>
