@@ -16,9 +16,9 @@
 }
 
 body {
-    background-color: rgba(234, 231, 231, 0.781);
+    background-color:rgb(255, 255, 255);
     margin: 10px;
-    font-family: Helvetica, Verdana, Arial;
+    font-family: Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
@@ -45,22 +45,27 @@ header {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color:rgb(244, 203, 255);
+    background-color:rgb(255, 255, 255);
 }
 
 h1 {
     text-align: center;
     font-size: 250%;
-    color: rgba(43, 0, 255, 0.539);
+    color: rgba(255, 0, 195, 0.539);
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 h2, footer {
-    color: rgba(43, 0, 255, 0.539);
+    color:rgb(211, 129, 255);
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 footer {
@@ -72,35 +77,34 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    border: 4px solid rgba(43, 0, 255, 0.539);
-    border-radius: 10px;
-    background-color:rgb(244, 203, 255);
+    color: rgba(255, 0, 195, 0.539);
+    background-color:rgb(255, 255, 255);
     font-size: 125%;
     padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 footer {
-    border: 4px solid rgba(43, 0, 255, 0.539);
-    border-radius: 10px;
-    background-color:rgb(244, 203, 255);
+    border-top: 4px solid rgba(255, 0, 195, 0.539);
+    background-color:rgb(255, 255, 255);
     padding: 5px;
     clear: both;
 }
 
 a {
+    color:rgb(211, 129, 255);
     text-decoration: none;
 }
 
 a:hover, a:focus, .skip:focus, footer a:focus {
     color: rgb(211, 129, 255);
     text-decoration: underline;
-    font-style: italic;
 }
 
 .active{
     font-weight: bold;
     text-decoration: underline;
-    font-style: italic;
 }
 
 .home-imgs{
@@ -110,47 +114,23 @@ a:hover, a:focus, .skip:focus, footer a:focus {
     align-items: center;
 }
 
-.home-imgs img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 2px solid rgb(244, 203, 255);
-    border-radius: 10px;
-    margin: 20px;
-}
-
-.about-overview, .about-technical, .about-creative {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
 p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.aboutme-flex img, .about-overview img, .about-technical img, .about-creative img, .work-gwc img, .work-lifeline img, .work-kpmg img, .whatthef img, .diiVe img, .funrun img, .spotify img, .patent img, .medium img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 10px;
-}
 
 .aboutme-flex img {
-    width: 500px;
+    width: 400px;
     height: auto;
 }
 
 .resume-imgs iframe{
     display: block;
-    width: 600px;
-    height: 1100px;
+    width: 400px;
+    height: 500px;
     margin: 0px auto;
+    overflow: scroll;
 }
 
 .work-gwc a, .work-lifeline a, .work-kpmg a, .whatthef a, .diiVe a, .funrun a, .spotify a, .patent a, .medium a{
@@ -160,10 +140,29 @@ p {
 
 #captionbox{
     margin: 0px auto;
-    border: 2px solid rgb(244, 203, 255);
+    border: 2px solid rgba(255, 0, 195, 0.539);
     border-radius: 10px;
     width: 25%;
     padding: 5px;
+}
+
+.about-overview img, .about-technical img, .about-creative img, .work-gwc img, .work-lifeline img, .work-kpmg img, .whatthef img, .diiVe img, .funrun img, .spotify img, .patent img, .medium img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-top:rgba(255, 0, 195, 0.539);
+}
+
+.awards-grid div, .projects-grid div, .about-grid div,.work-grid div {
+    border-top: 2px solid rgba(255, 0, 195, 0.539);
+    margin: 10px;
+    padding: 5px;
+}
+
+#resumewarning {
+    text-align: center;
+    font-style: italic;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -180,9 +179,7 @@ p {
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-around;
-        border: 4px solid rgba(43, 0, 255, 0.539);
-        border-radius: 10px;
-        background-color:rgb(244, 203, 255);
+        background-color:rgb(255, 255, 255);
         font-size: 125%;
         padding: 5px;
     }
@@ -210,11 +207,10 @@ p {
     }
 
     .aboutme-text, .aboutme-img {
-        margin: 20px;
+        margin: 10px;
     }
 
     .awards-grid div, .projects-grid div, .about-grid div,.work-grid div {
-        border: 2px solid rgb(244, 203, 255);
         margin: 10px;
         padding: 5px;
     }
@@ -230,56 +226,50 @@ p {
         padding: 5px;
     }
 
-    .home-contact {
-        width: 50%;
-        border: 2px solid rgb(244, 203, 255);
-        margin: 0px auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
     .resume-imgs img {
-        width: 90%;
+        width: 0%;
         height: auto;
         margin: 5px;
     }
 
-    .resume-warning {
-        width: 50%;
-        border: 2px solid rgb(244, 203, 255);
+    .about-overview img, .about-technical img, .about-creative img, .work-gwc img, .work-lifeline img, .work-kpmg img, .whatthef img, .diiVe img, .funrun img, .spotify img, .patent img, .medium img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+        border:rgba(255, 0, 195, 0.539);
+    }
+
+    .aboutme-flex img {
+        width: 450px;
+        height: auto;
+    }
+
+    .resume-imgs iframe{
+        display: block;
+        width: 80%;
+        height: 800px;
         margin: 0px auto;
+        overflow: scroll;
+        border:rgba(255, 0, 195, 0.539);
+    }
+
+    #resumewarning {
+        text-align: center;
         font-style: italic;
+        margin-top: 10px;
     }
    
 }
 
 @media screen and (min-width: 1300px) {
-    
-    .home-imgs{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .home-contact {
-        width: 25%;
-        border: 2px solid rgb(244, 203, 255);
-    }
-
-    .resume-warning {
-        width: 25%;
-        border: 2px solid rgb(244, 203, 255);
-        margin: 0px auto;
-        font-style: italic;
-    }
 
     .aboutme-flex {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-evenly;
-        width: 90%;
+        width: 80%;
         margin: 0px auto;
         flex-direction: column;
     }
@@ -289,6 +279,21 @@ p {
         width: 800px;
         height: 1100px;
         margin: 0px auto;
+        border:rgba(255, 0, 195, 0.539);
+        overflow: scroll;
+    }
+
+    .about-overview img, .about-technical img, .about-creative img, .work-gwc img, .work-lifeline img, .work-kpmg img, .whatthef img, .diiVe img, .funrun img, .spotify img, .patent img, .medium img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+        border:rgba(255, 0, 195, 0.539);
+    }
+
+    .aboutme-flex img {
+        width: 500px;
+        height: auto;
     }
 
 }
