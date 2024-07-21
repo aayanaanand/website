@@ -1,0 +1,299 @@
+#h1animation {
+    animation-duration: 2s;
+    animation-name: h1animation;
+}
+@keyframes h1animation { 
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#oneliner  {
+    font-size: 125%;
+}
+
+body {
+    background-color:rgb(255, 255, 255);
+    margin: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 95%;
+    margin: 0px auto;
+}
+
+.skip {
+    position: absolute;
+    left: 0px;
+    transform: translateY(-250%);
+}
+
+.skip:focus {
+    transform: translateY(0%);
+}
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    font-size: 250%;
+    color: rgba(255, 0, 195, 0.539);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h2, footer {
+    color:rgb(211, 129, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+footer {
+    font-size: 100%;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgba(255, 0, 195, 0.539);
+    background-color:rgb(255, 255, 255);
+    font-size: 125%;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+footer {
+    border-top: 4px solid rgba(255, 0, 195, 0.539);
+    background-color:rgb(255, 255, 255);
+    padding: 5px;
+    clear: both;
+}
+
+a {
+    color:rgb(211, 129, 255);
+    text-decoration: none;
+}
+
+a:hover, a:focus, .skip:focus, footer a:focus {
+    color: rgb(211, 129, 255);
+    text-decoration: underline;
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.home-imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.aboutme-flex img {
+    width: 400px;
+    height: auto;
+}
+
+.resume-imgs iframe{
+    display: block;
+    width: 400px;
+    height: 500px;
+    margin: 0px auto;
+    overflow: scroll;
+}
+
+.work-gwc a, .work-lifeline a, .work-kpmg a, .whatthef a, .diiVe a, .funrun a, .spotify a, .patent a, .medium a{
+    display: block;
+    margin: 0px auto;
+}
+
+#captionbox{
+    margin: 0px auto;
+    border: 2px solid rgba(255, 0, 195, 0.539);
+    border-radius: 10px;
+    width: 25%;
+    padding: 5px;
+}
+
+.about-overview img, .about-technical img, .about-creative img, .work-gwc img, .work-lifeline img, .work-kpmg img, .whatthef img, .diiVe img, .funrun img, .spotify img, .patent img, .medium img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-top:rgba(255, 0, 195, 0.539);
+}
+
+.awards-grid div, .projects-grid div, .about-grid div,.work-grid div {
+    border-top: 2px solid rgba(255, 0, 195, 0.539);
+    margin: 10px;
+    padding: 5px;
+}
+
+#resumewarning {
+    text-align: center;
+    font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #h1animation {
+        animation: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color:rgb(255, 255, 255);
+        font-size: 125%;
+        padding: 5px;
+    }
+
+    .home-imgs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .aboutme-flex {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: 0px auto;
+        flex-direction: column;
+    }
+
+    .aboutme-text, .aboutme-img {
+        margin: 10px;
+    }
+
+    .awards-grid div, .projects-grid div, .about-grid div,.work-grid div {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .awards-grid, .projects-grid, .work-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-grid div {
+        border: 2px solid rgb(244, 203, 255);
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .resume-imgs img {
+        width: 0%;
+        height: auto;
+        margin: 5px;
+    }
+
+    .about-overview img, .about-technical img, .about-creative img, .work-gwc img, .work-lifeline img, .work-kpmg img, .whatthef img, .diiVe img, .funrun img, .spotify img, .patent img, .medium img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+        border:rgba(255, 0, 195, 0.539);
+    }
+
+    .aboutme-flex img {
+        width: 450px;
+        height: auto;
+    }
+
+    .resume-imgs iframe{
+        display: block;
+        width: 80%;
+        height: 800px;
+        margin: 0px auto;
+        overflow: scroll;
+        border:rgba(255, 0, 195, 0.539);
+    }
+
+    #resumewarning {
+        text-align: center;
+        font-style: italic;
+        margin-top: 10px;
+    }
+   
+}
+
+@media screen and (min-width: 1300px) {
+
+    .aboutme-flex {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0px auto;
+        flex-direction: column;
+    }
+
+    .resume-imgs iframe{
+        display: block;
+        width: 800px;
+        height: 1100px;
+        margin: 0px auto;
+        border:rgba(255, 0, 195, 0.539);
+        overflow: scroll;
+    }
+
+    .about-overview img, .about-technical img, .about-creative img, .work-gwc img, .work-lifeline img, .work-kpmg img, .whatthef img, .diiVe img, .funrun img, .spotify img, .patent img, .medium img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+        border:rgba(255, 0, 195, 0.539);
+    }
+
+    .aboutme-flex img {
+        width: 500px;
+        height: auto;
+    }
+
+}
